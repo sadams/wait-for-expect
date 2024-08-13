@@ -3,7 +3,7 @@ import "./toBeInRangeMatcher";
 import waitForExpect from "./index";
 
 // this is a copy of "it waits for expectation to pass" modified to use jestFakeTimers and two ways of Date.now mocking
-// This breakes when we remove the const { setTimeout, Date: { now } } = typeof window !== "undefined" ? window : global;
+// This brakes when we remove the const { setTimeout, Date: { now } } = typeof window !== "undefined" ? window : global;
 // line from the index.ts
 
 beforeEach(() => {
@@ -43,7 +43,7 @@ test("it works even if the Date was mocked", async () => {
   Date = jest.fn(() => ({
     now() {
       return 1482363367071;
-    }
+    },
   }));
   /* eslint-enable */
   let numberToChange = 10;

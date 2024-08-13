@@ -2,7 +2,7 @@ import { getSetTimeoutFn } from "./helpers";
 
 const defaults = {
   timeout: 4500,
-  interval: 50
+  interval: 50,
 };
 
 /**
@@ -16,7 +16,7 @@ const defaults = {
 const waitForExpect = function waitForExpect<T>(
   expectation: () => T | Promise<T>,
   timeout = defaults.timeout,
-  interval = defaults.interval
+  interval = defaults.interval,
 ) {
   const setTimeout = getSetTimeoutFn();
 
@@ -37,7 +37,7 @@ const waitForExpect = function waitForExpect<T>(
       tries += 1;
       try {
         Promise.resolve(expectation())
-          .then(result => resolve(result))
+          .then((result) => resolve(result))
           .catch(rejectOrRerun);
       } catch (error) {
         rejectOrRerun(error);

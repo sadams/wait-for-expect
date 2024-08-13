@@ -8,7 +8,8 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "pretty": true,
-    "downlevelIteration": true
+    "downlevelIteration": true,
+    "useUnknownInCatchVariables": false
   },
   "include": [
     "src/**/*"
