@@ -16,6 +16,10 @@
     "type": "git",
     "url": "https://github.com/sadams/wait-for-expect.git"
   },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "jest",
     "expect",
