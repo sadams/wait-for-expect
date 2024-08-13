@@ -1,5 +1,5 @@
 {
-  "name": "wait-for-expect",
+  "name": "@sadams/wait-for-expect",
   "version": "0.0.0-development",
   "description": "Wait for expectation to be true, useful for integration and end to end testing",
   "main": "lib/index.js",
