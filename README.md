@@ -1,13 +1,20 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![CircleCI](https://circleci.com/gh/sadams/wait-for-expect.svg?style=shield)](https://circleci.com/gh/sadams/wait-for-expect)
 
+
 # wait-for-expect
 Wait for expectation to be true, useful for integration and end to end testing
 
 Think things like calling external APIs, database operations, or even GraphQL subscriptions. 
 We will add examples for all of them soon, for now please enjoy the simple docs. :-)
 
-# Usage:
+## Why Fork the Original?
+
+The [original](https://github.com/TheBrainFamily/wait-for-expect) is great but seemed to be [abandoned](https://github.com/TheBrainFamily/wait-for-expect/issues/39).
+
+We aim to merge PRs on this repo and keep it going.
+
+## Usage:
 
 ```javascript
 const waitForExpect = require("wait-for-expect")
