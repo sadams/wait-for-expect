@@ -17,7 +17,7 @@ const waitForExpect = function waitForExpect<T>(
   expectation: () => T | Promise<T>,
   timeout = defaults.timeout,
   interval = defaults.interval,
-) {
+): Promise<T> {
   const setTimeout = getSetTimeoutFn();
 
   // eslint-disable-next-line no-param-reassign
